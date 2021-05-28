@@ -19,4 +19,10 @@ Ctr 押しながらCボタン(ターミナルで)
 
 [server](http://localhost:3000/)
 
-aa
+- gitの変更
+
+1. command S
+2. サイドバーのsource controlを押す
+3. changesの＋ボタンを押す
+4. messageをかく
+5. command押しながらEnter
