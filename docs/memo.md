@@ -26,3 +26,4 @@ Ctr 押しながらCボタン(ターミナルで)
 3. changesの＋ボタンを押す
 4. messageをかく
 5. command押しながらEnter
+6. source controlの欄の点三つのやつを押してpushを選択
