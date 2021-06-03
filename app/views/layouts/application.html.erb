@@ -11,16 +11,48 @@
     <%= stylesheet_pack_tag "application", "data-turbo-track": "reload" %>
   </head>
 
-  <body>
-    <header class="bg-gray-800" x-data="{ isOpen: false }">
-        <section class="flex items-center justify-center" style="height: 60px;">
+  <body class="flex flex-col h-screen">
+    <main class="flex-grow">
+      <%
+=begin%>
+ <header class="bg-gray-800" x-data="{ isOpen: false }">
+          <section class="flex items-center pl-6" style="height: 60px;">
 
-            <div class = text-center>
-                <p class="text-3xl font-large tracking-wider text-blue-600">Chat App</p>
-            </div>
-
-        </section>
-    </header>
-    <%= yield %>
+              <div class = "text-center">
+                  <p class="text-3xl font-large tracking-wider text-blue-600">Chat App</p>
+              </div>
+              <menu class="md:flex md:justify-end">
+                <div class="text-2xl font-large tracking-tighter text-blue-500 px-10 border-r border-l">
+                  <p>TIMELINE</p>
+                </div>
+                <div class="text-2xl font-large tracking-tighter text-blue-500 px-10 border-r">
+                  <p>SEARCH</p>
+                </div>
+                <div class="text-2xl font-large tracking-tighter text-blue-500 px-10 border-r">
+                  <p>NOTIFICATION</p>
+                </div>
+                <div class="text-2xl font-large tracking-tighter text-blue-500 px-10 border-r">
+                  <p>DM</p>
+                </div>
+                <div class="text-2xl font-large tracking-tighter text-blue-500 px-10 border-r">
+                  <p>HELP</p>
+                </div>
+              </menu>
+          </section>
+      </header> 
+<%
+=end%>
+      <%= yield %>
+    <%
+=begin%>
+ </main>
+    <footer class="bg-gray-600" x-data="{ isOpen: false }">
+      <div class="flex items-center pl-6" style="height: 200px;">
+      <p>TOP</p>
+        
+      </p>
+    </footer> 
+<%
+=end%>
   </body>
 </html>

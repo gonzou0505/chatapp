@@ -42,3 +42,9 @@ viewは`app/views/コントローラー名/メソッド名.html.erb`を呼び出
 
 この場合は`app/views/welcome/index.html.erb`
 
+---
+- aタグ
+
+```
+<a href="URL">表示文字</a>
+```
